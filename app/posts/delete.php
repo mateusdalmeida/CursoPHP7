@@ -1,8 +1,9 @@
+
+
 <?php
 	include("layout/header.php");
+
 	include("../../config.php");
-
-
 
 	if (isset($_GET['id'])) {
 		$id = $_GET['id'];
@@ -16,6 +17,7 @@
 		"Houve um erro";
 	}
 	echo "<a href='index.php'><< Voltar</a>";
-
 	}
+
+
 ?>

@@ -6,7 +6,8 @@
  <?php 
  	if (isset($_POST['enviado'])) {
  		
- 		$sql = "INSERT INTO usuarios (nome, email, senha, tipo) VALUES('{$_POST['nome']}', '{$_POST['email']}', '{$_POST['senha']}', '{$_POST['tipo']}' )";
+ 		$md5 = md5($_POST['senha']);
+ 		$sql = "INSERT INTO usuarios (nome, email, senha, tipo) VALUES('{$_POST['nome']}', '{$_POST['email']}', '{$md5}', '{$_POST['tipo']}' )";
  		mysqli_query($connect, $sql) or die (mysqli_error($connect));
  		echo "Usuario salvo com sucesso";
  		echo "<a href='index.php'><< Voltar</a>";

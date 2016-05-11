@@ -1,8 +1,8 @@
-<meta charset="UTF-8">
 <?php 
-	include("../../config.php")
+	include("layout/header.php");
+	include("../../config.php");
  ?>
-
+ 
 <?php 
 
 	if (isset($_GET['id'])) {

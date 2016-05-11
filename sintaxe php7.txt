@@ -1,0 +1,7 @@
+mysqli_select_db($connect, "meublog")
+mysqli_affected_rows($connect)
+mysqli_query($connect, $sql)
+mysqli_error($connect)
+mysqli_fetch_assoc(mysqli_query($connect, $sql))
+mysqli_fetch_array($posts)
+mysqli_num_rows($resultado);
